@@ -68,7 +68,7 @@ public:
   void advertise(
     rclcpp::Node * nh,
     const std::string & base_topic,
-    rmw_qos_profile_t custom_qos = rmw_qos_profile_default)
+    rmw_qos_profile_t custom_qos = rmw_qos_profile_sensor_data)
   {
     advertiseImpl(nh, base_topic, custom_qos);
   }

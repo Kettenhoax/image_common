@@ -115,7 +115,7 @@ public:
     rclcpp::Node * node,
     const std::string & base_topic,
     const std::string & transport,
-    rmw_qos_profile_t custom_qos = rmw_qos_profile_default)
+    rmw_qos_profile_t custom_qos = rmw_qos_profile_sensor_data)
   {
     unsubscribe();
     sub_ =
